@@ -1,0 +1,23 @@
+we use mySql for testing 
+
+this is table for testing this project
+
+CREATE TABLE EMPLOYEE(
+    id INT NOT NULL auto_increment, 
+    name VARCHAR(50) NOT NULL,
+    joining_date DATE NOT NULL,
+    salary DOUBLE NOT NULL,
+    ssn VARCHAR(30) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
+
+How to run this project:
+1. downloade zip file or clone from github
+2. unzip this project and import to eclipe
+3. change in properti file src/main/resource/application.properties
+
+jdbc.url = jdbc:mysql://localhost:3306/yourdb
+jdbc.username = your username
+jdbc.password = your password
+
+4. run it with tomcate 8
